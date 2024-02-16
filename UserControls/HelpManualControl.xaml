@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="QR_Manaeste.UserControls.HelpManualControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QR_Manaeste.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#F2F2F2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Background="#881CDA">
+            <TextBlock Text="User Manual" FontSize="24" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <!-- Content Area -->
+        <ScrollViewer Grid.Row="1" Background="#FFE9FF">
+            <StackPanel Margin="20">
+                <TextBlock TextWrapping="Wrap">
+                    <Run FontWeight="Bold" FontSize="20">Welcome to the User Manual for QR Encoder and Decoder App!</Run>
+                    <LineBreak/><LineBreak/>
+                    <Run FontWeight="Bold" FontSize="17">How to create a QR Code:</Run>
+                    <LineBreak/>
+                    <Run FontSize="14">1. Type the text or paste a link in the text field. The red background of the text field suggests that you need to type some text to be encoded. The green background indicates you can encode.</Run>
+                    <LineBreak/>
+                    <InlineUIContainer>
+                        <Image Source="/Images/type.png" Width="360" Height="215" />
+                    </InlineUIContainer>
+                    <LineBreak />
+                    <Run FontSize="14">2. After clicking "Generate QR Code," an image will appear. You can scan the code using your mobile phone's QR scanner. Now you can save the QR code image or copy it to the clipboard.</Run>
+                    <LineBreak/><LineBreak/>
+                    <InlineUIContainer>
+                        <Image Source="/Images/encode.png" Width="360" Height="215" />
+                    </InlineUIContainer>
+                    <LineBreak />
+                    <Run FontWeight="Bold" FontSize="17">How to decode a QR Code:</Run>
+                    <LineBreak/>
+                    <Run FontSize="14">1. Proceed to the Scan QR Code section by clicking the button on the left.</Run>
+                    <LineBreak/>
+                    <Run FontSize="14">2. Press the button to choose the image QR code file to decode.</Run>
+                    <LineBreak/>
+                    <Run FontSize="14">3. Choose the file.</Run>
+                    <LineBreak/>
+                    <InlineUIContainer>
+                        <Image Source="/Images/file.png" Width="360" Height="215" />
+                    </InlineUIContainer>
+                    <LineBreak />
+                    <Run FontSize="14">4. Now, you can see the decoded text and copy it to the clipboard.</Run>
+                    <InlineUIContainer>
+                        <Image Source="/Images/decode.png" Width="360" Height="215" />
+                    </InlineUIContainer>
+                    <LineBreak />
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

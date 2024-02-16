@@ -1,5 +1,5 @@
 # QR-Code-Encoder-and-Decoder
-Windows .NET WPF Application for creating and scanning QR codes. The application uses MVVM pattern.
+Windows .NET WPF Application for creating and scanning QR codes. The application uses MVVM pattern and involves basic User testing techniques.
 
 ![image](https://github.com/u4zarus/QR-Code-Encoder-and-Decoder/assets/59415226/00aa8302-c6f7-42fe-b746-ba9d97843139)
 
